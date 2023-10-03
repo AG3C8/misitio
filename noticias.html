@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-pzjw8+ua8ao5qcbk6e8f3pjt41z4zj3f5jz6w9q8q3i6+h5b6s3/pibzswg6kbo"
+        crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .navbar {
+            background-color: #58B2AF;
+        }
+
+        .jumbotron {
+            background: #ffffff;
+        }
+
+        .noticia-text {
+            background-color: #58B2AF;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Sitio Web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="border-color: #58B2AF;"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" style="border-color: #58B2AF;"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" style="border-color: #58B2AF;"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3" style="border-color: #58B2AF;"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4" style="border-color: #58B2AF;"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/noticia1.jpg" class="d-block w-100" alt="Noticia 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Noticia 1</h5>
+                        <p class="noticia-text">Texto de la noticia 1. <a href="#" data-toggle="modal"
+                                data-target="#noticiaModal1">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia2.jpg" class="d-block w-100" alt="Noticia 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Noticia 2</h5>
+                        <p class="noticia-text">Texto de la noticia 2. <a href="#" data-toggle="modal"
+                                data-target="#noticiaModal2">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia3.jpg" class="d-block w-100" alt="Noticia 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Noticia 3</h5>
+                        <p class="noticia-text">Texto de la noticia 3. <a href="#" data-toggle="modal"
+                                data-target="#noticiaModal3">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia4.jpg" class="d-block w-100" alt="Noticia 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Noticia 4</h5>
+                        <p class="noticia-text">Texto de la noticia 4. <a href="#" data-toggle="modal"
+                                data-target="#noticiaModal4">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia5.jpg" class="d-block w-100" alt="Noticia 5">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Noticia 5</h5>
+                        <p class="noticia-text">Texto de la noticia 5. <a href="#" data-toggle="modal"
+                                data-target="#noticiaModal5">Ver más</a></p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: #58B2AF;"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="color: #58B2AF;"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modals para las noticias -->
+    <div class="modal fade" id="noticiaModal1" tabindex="-1" role="dialog" aria-labelledby="noticiaModal1Label"
+        aria-hidden="true">
+        <!-- Contenido del modal aquí -->
+    </div>
+    <div class="modal fade" id="noticiaModal2" tabindex="-1" role="dialog" aria-labelledby="noticiaModal2Label"
+        aria-hidden="true">
+        <!-- Contenido del modal aquí -->
+    </div>
+    <div class="modal fade" id="noticiaModal3" tabindex="-1" role="dialog" aria-labelledby="noticiaModal3Label"
+        aria-hidden="true">
+        <!-- Contenido del modal aquí -->
+    </div>
+    <div class="modal fade" id="noticiaModal4" tabindex="-1" role="dialog" aria-labelledby="noticiaModal4Label"
+        aria-hidden="true">
+        <!-- Contenido del modal aquí -->
+    </div>
+    <div class="modal fade" id="noticiaModal5" tabindex="-1" role="dialog" aria-labelledby="noticiaModal5Label"
+        aria-hidden="true">
+        <!-- Contenido del modal aquí -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-RfXdzGD+8CTlnjMDL8YgmGnDEMOlBPyQ8W0p/8lF+0JlTQCb/k5BdPt8DlVgMI3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
